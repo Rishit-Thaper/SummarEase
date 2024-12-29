@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "SummerEase",
+    "version": "1.0.0",
+    "description": "Quickly summarize any webpage with just a click. Get concise, clear insights without the clutter.",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": []
+}
