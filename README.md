@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# SummarEase: Ek Webpage Summarizer Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Yeh extension React, Vite aur Google Gemini API ka use karke banaya gaya hai.
 
-Currently, two official plugins are available:
+## Kaise use karna hai, aao batata hu:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Ekdum simple hai:
 
-## Expanding the ESLint configuration
+1. Sabse pehle, iss repo ko clone karo:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Phir yeh command run karo dependencies install karne ke liye:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   pnpm install
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. `.env` file bana lo jisme tum apni API key store karoge. Dhyaan rahe ki API key ka naam **VITE\_** se start hona chahiye. Maine **VITE_GEMINI_API_KEY** use kiya hai.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. Ab extension ko build karne ke liye yeh command run karo:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   pnpm build
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+5. Fir browser mein jaake **chrome://extensions/** search karo.
+
+6. Waha **Developer mode** ko on karo, aur **Load unpacked** option mein apne project ki build directory ko import kar lo.
+
+7. Bas, ab extension ko apne browser mein use kar sakte ho!
+
+Ab tum kisi bhi webpage ka summary dekh sakte ho, bas extension icon pe click karna hai!
+
+and **All Set 🚀😁**
