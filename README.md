@@ -1,12 +1,12 @@
 # SummarEase: Ek Webpage Summarizer Extension
 
-Yeh extension React, Vite aur Google Gemini API ka use karke banaya gaya hai.
+Yeh extension React, Vite aur Google Gemini API ka use karke banaya hai.
 
 ## Kaise use karna hai, aao batata hu:
 
 ### Ekdum simple hai:
 
-1. Sabse pehle, iss repo ko clone karo:
+1. Sabse pehle, iss repo ko clone karo.
 
 2. Phir yeh command run karo dependencies install karne ke liye:
 
